@@ -3,7 +3,7 @@ import json
 
 def pedir_imc(nombre,estatura,peso):
     try:
-        url = "http://192.168.1.135:8000/imc/calculador/{}/{}/{}".format(nombre,peso,estatura)
+        url = "http://127.0.0.1:8000/imc/calculador/{}/{}/{}".format(nombre,peso,estatura)
         payload = {}
         headers= {}
         response = requests.request("GET", url, headers=headers, data = payload)
